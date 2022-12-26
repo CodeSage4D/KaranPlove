@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url("fonts/HelveticaNeueLTStd45Light_22520.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -5,8 +10,8 @@
 
 #overview{
     margin: 13%;
-    width: 256px;
-    height: 272px;
+    width: 220px;
+    height: "auto";
     position: relative;
     overflow: hidden;
     background: #040218;
@@ -15,25 +20,28 @@
 }
 
 #login_btn{
-    margin: 15px 20px 10px 42px;
+    margin: 10px 15px 1px 42px;
     padding: 8px 12px;
-    font-size:16px;
+    font-size:13px;
     border-radius:20px;
     background: #63adf2;
     color: lightgoldenrodyellow;
-    border: 0.1px solid black;
+    border: 0.1px solid lime;
 }
 
 #register_btn{
-    margin: 15px 20px 10px 42px;
+    margin: px 2px 5px 40px;
     padding: 8px 12px;
-    font-size: 16px;
+    font-size: 13px;
     border-radius:30px;
-    border: 0.1px solid rgb(131, 248, 227);
+    border: 0.1px solid lime;
 }
 
 #login_form{
     position: relative;
+    color: aliceblue;
+    margin: auto;
+    padding: auto;
 }
 
 input{
@@ -67,3 +75,5 @@ input[type="submit"]{
     left: 400px;
     top:65px;
 }
+/* ============================================================================= */
+/* ----------------register page------------------------- */

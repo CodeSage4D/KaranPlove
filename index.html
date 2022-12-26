@@ -5,39 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Registration</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
     <div id="overview">
         <!-- Toggle Button -->
         <div id="Button_box">
-            <button id="login_btn" onclick="login">Login</button>
-            <button id="register_btn" onclick="register">Register</button>
+            <button id="login_btn" onclick="login()">Login</button>
+            <button id="register_btn" onclick="register()">Register</button>
         </div>
         <!-- Login Form -->
         <form id="login_form">
+
             <input type="text" placeholder="User ID" required>
             <input type="text" placeholder="Password" required><br>
             <label for="checkbox"></label>
             <input type="checkbox"/>
-            <span color="white">Remember Password</span>
+            <span>Remember Password</span>
             <br>
             <input type="Submit" value="Log In">
         </form>
 
         <!-- ----------------Registration Form------------------ -->
 
-        <form id="registerForm">
-            <input type="text" name="User ID" placeholder="User Id" required>
-            <input type="text" name="Password" placeholder="Password" required>
-            <span color="white">Remember Password</span><br>
-            <input type="email" name="E-mail" placeholder="Email Id" required>
-            <input type="submit" value="Register">
+        <form action="registerPage.html">
+            <input type="submit" name="" value="Register">
+
         </form>
+
+        <a href="login.html"><span>Login</span></a>
+        <a href="registerPage.html" class="">Register</a>
+
+
+        <input type="button" onclick="location.href='registerPage.html';" value="register" />
+
     </div>
 
     <!-- ------------JavaScript----------- -->
     <script src="index.js"></script>
 </body>
 </html>
+
+<!--
+//how to link button to link html page in html?
+<form action="https://google.com">
+    <input type="submit" value="Go to Google" />
+</form>
+
+
+<a href="https://google.com" class="btn btn-primary">Go to Google</a>
+
+
+<input type="button" onclick="location.href='https://google.com';" value="Go to Google" /> -->
+
+
+
+
+
